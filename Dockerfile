@@ -8,7 +8,7 @@ EXPOSE 3001
 WORKDIR /app
 
 # 数据卷（Render 会通过服务配置挂载磁盘）
-VOLUME /app/data
+VOLUME /
 
 # 启动命令（Uptime Kuma 镜像已内置 ENTRYPOINT，这里无需额外指定）
 # CMD 已经在基础镜像中定义为启动 Uptime Kuma 服务
